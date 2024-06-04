@@ -1,0 +1,422 @@
+@font-face {
+    font-family: "codec-cd";
+    src: url(/assets/font/codec-cold-bold.ttf) format('truetype');
+}
+
+h1 {
+    font-size: 83px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "codec-cd";
+    background-color: #101728;
+    color: white;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: [col1] 10% [col2] 80% [col3] 10%;
+    grid-template-rows: [row] 100% [row] 100% [row] 100% [row] 100% [row] 100% [row] 100%;
+    /* overflow-x: hidden; */
+}
+
+
+.sect1 {
+    grid-column: col2;
+    grid-column-start: col2;
+    grid-column-end: col3;
+    grid-row: row 1;
+    display: grid;
+    grid-template-columns: [col11]50% [col22] 50%;
+    grid-template-rows: [row] 100%;
+
+}
+
+.text1 {
+    grid-area: col11;
+    grid-row: row 1;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 40%;
+    text-align: center;
+
+}
+
+.sect1-img {
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+}
+
+
+.sect1 img {
+    border-radius: 50px;
+    box-shadow: 0 0 1000px #3503ff;
+    grid-area: col22;
+    max-width: 400px;
+
+}
+.sect1 img:hover {
+    border-radius: 50px;
+    box-shadow: 0 0 1000px #3503ff;
+    box-shadow: 0 0 1200px #3e0eff;
+    grid-area: col22;
+    max-width: 400px;
+
+}
+
+
+.sect2 {
+
+    grid-column: col2;
+    grid-column-start: col2;
+    grid-column-end: col3;
+    grid-row: row 2;
+    display: grid;
+    grid-template-columns: [col11]50% [col22] 50%;
+    grid-template-rows: [row] 100%;
+}
+
+.text2-h2 {
+    font-size: 75px;
+
+}
+
+.text2 {
+
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+
+.sect2-img {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20%;
+
+}
+
+.sect2-img img {
+    width: 600px;
+    height: 500px;
+    border-radius: 20px;
+}
+.sect2-img img:hover {
+    width: 630px;
+    height: 520px;
+    border-radius: 20px;
+    box-shadow: 0 0 150px #542aff;
+}
+
+
+.sect3 {
+
+    grid-column: col2;
+    grid-column-start: col2;
+    grid-column-end: col3;
+    grid-row: row 3;
+    display: grid;
+    grid-template-columns: [col11]50% [col22] 50%;
+    grid-template-rows: [row] 100%;
+}
+
+.sect3-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sect3-img img {
+    max-width: 700px;
+    height: 60%;
+    border-radius: 10px;
+}
+.sect3-img img:hover {
+    box-shadow: 0 0 150px #040208;
+}
+.sect4-img img:hover {
+    box-shadow: 0 0 50px #292929;
+}
+.sect4 {
+    grid-column: col2;
+    grid-column-start: col2;
+    grid-column-end: col3;
+    grid-row: row 4;
+    display: grid;
+    grid-template-rows: [row] 40% [row] 60%;
+}
+
+.text4 {
+
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 10px 20px;
+}
+
+.sect4-img {
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.sect4-img img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.sect5 {
+
+    grid-column: col2;
+    grid-column-start: col2;
+    grid-column-end: col3;
+    grid-row: row 5;
+    display: grid;
+    grid-template-columns: [col11]50% [col22] 50%;
+    grid-template-rows: [row] 100%;
+}
+
+.sect5-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sect5-img img {
+    max-width: 700px;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.sect6 {
+
+    grid-column: col2;
+    grid-column-start: col2;
+    grid-column-end: col3;
+    grid-row: row 6;
+    display: grid;
+    grid-template-rows: [row] auto [row] 15% [row];
+    text-align: center;}
+
+
+
+    .sect6 .txt1 {
+        display: flex;
+        align-items: end;
+        justify-content:center ;
+        grid-area: row 1;
+
+    }
+
+    .sect6 .txt2 {
+      
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content:center ;
+        grid-area: row 2;
+        font-size: larger;
+        line-height:30px
+    }
+
+    .sect6 .sect6-img {
+
+        
+        grid-area: row 3;
+
+
+
+    }
+    .sect6 .sect6-img img{
+        margin: 1.5%;
+        max-width: 60px;
+    }
+
+    .sect6 .sect6-img img:hover{
+        cursor: pointer;
+        border-radius: 30%;
+        box-shadow: 0 0 15px #20004b;
+
+    }
+
+
+
+    
+/* 
+    @media screen and (max-width: 1600px ){
+        h1 {
+            font-size: 83px;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "codec-cd";
+            background-color: #101728;
+            color: white;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: [col2] 100%;
+            grid-template-rows: repeat(6, auto);
+        }
+        
+        .sect1, .sect2, .sect3, .sect4, .sect5, .sect6 {
+            grid-column: col2;
+            grid-column-start: col2;
+            grid-column-end: col2;
+        }
+        
+        .sect1, .sect2, .sect3, .sect5 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        
+        .text1, .text2, .text4, .sect6 .txt1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .text1 {
+            margin-top: 40%;
+        }
+        
+        .text2 {
+            font-size: 1.5rem;
+            flex-direction: column;
+            margin-bottom: 20%;
+        }
+        
+        .text2-h2 {
+            font-size: 75px;
+        }
+        
+        .sect1-img, .sect2-img, .sect3-img, .sect4-img, .sect5-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .sect1 img, .sect2-img img, .sect3-img img, .sect4-img img, .sect5-img img {
+            border-radius: 10px;
+        }
+        
+        .sect1 img, .sect2-img img {
+            max-width: 400px;
+        }
+        
+        .sect1 img:hover, .sect2-img img:hover {
+            box-shadow: 0 0 150px #542aff;
+        }
+        
+        .sect3-img img {
+            max-width: 700px;
+            height: 60%;
+        }
+        
+        .sect3-img img:hover {
+            box-shadow: 0 0 150px #040208;
+        }
+        
+        .sect4 {
+            display: grid;
+            grid-template-rows: auto auto;
+        }
+        
+        .text4 {
+            font-size: 1.5rem;
+            flex-direction: column;
+            margin: 0 20px 10px 20px;
+        }
+        
+        .sect5-img img {
+            max-width: 700px;
+            height: 50%;
+        }
+        
+        .sect6 {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            text-align: center;
+        }
+        
+        .sect6 .txt1, .sect6 .txt2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .sect6 .txt2 {
+            flex-wrap: wrap;
+            font-size: larger;
+            line-height: 30px;
+        }
+        
+        .sect6 .sect6-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .sect6 .sect6-img img {
+            margin: 1.5%;
+            max-width: 60px;
+        }
+        
+        .sect6 .sect6-img img:hover {
+            cursor: pointer;
+            border-radius: 30%;
+            box-shadow: 0 0 15px #20004b;
+        }
+    }
+    @media (max-width: 768px) {
+        body {
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+        }
+    
+        .sect1, .sect2, .sect3, .sect5 {
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto;
+        }
+    
+        .text1, .text2, .text4, .sect6 .txt1 {
+            margin-top: 0;
+        }
+    
+        .sect1-img, .sect2-img, .sect3-img, .sect4-img, .sect5-img {
+            margin-top: 20px;
+        }
+    
+        .sect1 img, .sect2-img img, .sect3-img img, .sect4-img img, .sect5-img img {
+            max-width: 90%;
+            width: 100%;
+        }
+    
+        .text2, .sect6 .txt2 {
+            font-size: 1.2rem;
+        }
+    
+        .sect3-img img, .sect5-img img {
+            height: auto;
+        }
+    } */
